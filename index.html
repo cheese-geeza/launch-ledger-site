@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LaunchLedger — QuickBooks setup for startups</title>
+  <meta name="description" content="QuickBooks Online set up right, in days not weeks. Startup-friendly fixed fees, clean Chart of Accounts, app integrations, and founder training."/>
+  <style>
+    html { scroll-behavior: smooth; }
+    :root{
+      --bg:#0f172a; /* slate-900 */
+      --panel:#111827ee; /* gray-900 */
+      --muted:#94a3b8; /* slate-400 */
+      --text:#e5e7eb; /* gray-200 */
+      --brand:#38bdf8; /* sky-400 */
+      --brand-2:#22d3ee; /* cyan-400 */
+      --accent:#a78bfa; /* violet-400 */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(1200px 600px at 80% -10%, #1f2937 0%, #0b1020 50%, #050914 100%), var(--bg);color:var(--text);font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"}
+    a{color:var(--brand)}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(10px);background:#0b1020cc;border-bottom:1px solid #1f2538;z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+    .logo-badge{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--accent));display:grid;place-items:center;font-weight:800}
+    .nav a{margin-left:16px;text-decoration:none;color:var(--text);opacity:.85}
+    .nav a:hover{opacity:1}
+
+    .hero{padding:88px 0 48px; text-align:center}
+    .hero h1{font-size: clamp(32px, 6vw, 54px); line-height:1.05;margin:0 0 14px}
+    .hero p{font-size: clamp(16px, 2.2vw, 20px); color:var(--muted);margin:0 auto 26px;max-width:780px}
+    .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-block;padding:13px 18px;border-radius:12px;border:1px solid #263049;text-decoration:none;color:var(--text);font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#04202a;border:none}
+    .badges{margin-top:22px;color:#9fb0c6;font-size:14px}
+
+    section { padding:56px 0; scroll-margin-top:90px; }
+    h2{font-size: clamp(24px, 3.5vw, 34px); margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 12;background:linear-gradient(180deg, #0e1526, #0b1120);border:1px solid #1d273d;border-radius:16px;padding:18px}
+    @media(min-width:800px){.card.span-6{grid-column:span 6}}
+    @media(min-width:1000px){.card.span-4{grid-column:span 4}}
+    .card h3{margin:0 0 10px;font-size:20px}
+    .muted{color:var(--muted)}
+    ul{margin:12px 0 0 18px}
+
+    .pricing{display:grid;gap:18px}
+    @media(min-width:900px){.pricing{grid-template-columns:1fr 1fr 1fr}}
+    .price{background:linear-gradient(180deg,#0b1222,#0a1020);border:1px solid #24324d;border-radius:16px;padding:22px}
+    .price h3{margin:0 0 6px}
+    .price .amount{font-size:30px;font-weight:800;margin:6px 0}
+
+    .faq details{background:#0b1222;border:1px solid #1e2a44;border-radius:12px;padding:14px;margin:10px 0}
+    footer{padding:30px 0;color:#8fa0b7;border-top:1px solid #182238}
+    .mini{font-size:13px}
+    .tag{display:inline-block;padding:4px 8px;border:1px solid #2a3858;border-radius:999px;font-size:12px;color:#b6c6dc;margin-right:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo"><span class="logo-badge">L</span> LaunchLedger</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>QuickBooks set up right, in days not weeks.</h1>
+      <p>We stand up QuickBooks Online for startups: a clean Chart of Accounts, bank & app connections (Stripe, Shopify, Gusto), and founder training so you can close faster and make better decisions.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://calendly.com/kieran-perman/30min" target="_blank" rel="noopener">Book a free 20‑min setup call</a>
+        <a class="btn" href="#pricing">See pricing</a>
+      </div>
+      <div class="badges">
+        <span class="tag">Startup‑friendly fixed fees</span>
+        <span class="tag">10+ years in QBO</span>
+        <span class="tag">Denver • Remote U.S.</span>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <div class="card span-6">
+            <h3>QBO New File Setup</h3>
+            <p class="muted">Company settings, fiscal year, sales tax profile, and user roles—configured for startups.</p>
+            <ul>
+              <li>Clean Chart of Accounts (SaaS, e‑com, services)</li>
+              <li>Products/Services & revenue mapping</li>
+              <li>Opening balances, customers/vendors import</li>
+            </ul>
+          </div>
+          <div class="card span-6">
+            <h3>Bank & App Connections</h3>
+            <p class="muted">Connect the tools you already use and map them correctly.</p>
+            <ul>
+              <li>Bank & credit card feeds + bank rules</li>
+              <li>Stripe, Shopify, Square, PayPal</li>
+              <li>Gusto, Bill.com and more</li>
+            </ul>
+          </div>
+          <div class="card span-6">
+            <h3>Founder Training</h3>
+            <p class="muted">60–90 minutes live. Do‑it‑together entries, best practices, and a simple month‑end checklist.</p>
+          </div>
+          <div class="card span-6">
+            <h3>Add‑ons</h3>
+            <p class="muted">Cleanup/catch‑up, desktop‑to‑online conversion, light monthly support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <div class="pricing">
+          <div class="price">
+            <h3>Starter Setup</h3>
+            <div class="amount">$749 one‑time</div>
+            <ul>
+              <li>New QBO file + basic industry COA</li>
+              <li>Up to 2 bank/CC feeds</li>
+              <li>1 app integration (e.g., Stripe <em>or</em> Shopify)</li>
+              <li>60‑min founder training</li>
+            </ul>
+          </div>
+          <div class="price">
+            <h3>Growth Setup</h3>
+            <div class="amount">$1,250 one‑time</div>
+            <ul>
+              <li>Everything in Starter</li>
+              <li>Up to 4 bank/CC feeds</li>
+              <li>3 app integrations</li>
+              <li>Revenue mapping + 90‑min training</li>
+            </ul>
+          </div>
+          <div class="price">
+            <h3>Support Add‑On</h3>
+            <div class="amount">$199 / month</div>
+            <ul>
+              <li>Includes up to <strong>2 hours</strong> of support</li>
+              <li>Email Q&A, monthly file review, minor fixes</li>
+              <li>Additional time: <strong>$125/hour</strong></li>
+            </ul>
+          </div>
+        </div>
+        <p class="muted mini" style="margin-top:10px">Exact scope confirmed on a quick call. Fixed fee provided before we start.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Outcomes</h2>
+        <div class="grid">
+          <div class="card span-4"><h3>Clean, investor‑ready financials</h3><p class="muted">Reports that actually reflect how your business runs.</p></div>
+          <div class="card span-4"><h3>Faster month‑end close</h3><p class="muted">Simple, repeatable checklist you can follow.</p></div>
+          <div class="card span-4"><h3>Know what to do next</h3><p class="muted">We train you and hand off clearly.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details><summary>How fast can we start?</summary><p>Usually within 48–72 hours after kickoff and access.</p></details>
+          <details><summary>Do you work with QuickBooks Desktop?</summary><p>We specialize in QBO and can convert from Desktop when needed.</p></details>
+          <details><summary>Will you do ongoing bookkeeping?</summary><p>We offer light monthly support, or we’ll hand off to your team.</p></details>
+          <details><summary>What apps do you support?</summary><p>Stripe, Shopify, Square, Gusto, Bill.com, and more. We’ll confirm the exact stack on the call.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container" style="text-align:center">
+        <h2>Get QuickBooks set up the right way</h2>
+        <p class="muted">Book a free 20‑min setup call or send a note — we’ll reply fast.</p>
+        <div class="cta" style="margin-bottom:10px">
+          <a class="btn primary" href="https://calendly.com/YOUR-LINK/20min" target="_blank" rel="noopener">Book a call</a>
+          <a class="btn" href="april.perman@gmail.com">april.perman@gmail.com</a>
+        </div>
+        <p class="mini muted">Denver, CO • Serving U.S. remotely</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container mini">© <span id="y"></span> LaunchLedger • Startup accounting setup • Denver, CO</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
